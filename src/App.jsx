@@ -1,11 +1,13 @@
 import React from "react";
+import Header from "./components/Header";
 
 function App() {
 
 
   return (
-    <div className="App">
-      <h2>Working on it</h2>
+    <div className="container-fluid app-bg">
+      <Header />
+      <div className="display-1">Hello COvid</div>
     </div>
   )
 }
