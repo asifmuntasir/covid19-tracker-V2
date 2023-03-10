@@ -11,7 +11,7 @@ const CountryInfo = () => {
 
     return (
         <div className="container-md mt-3">
-            <CountryList />
+            <CountryList handleClick={handleClick} />
         </div>
     );
 }
