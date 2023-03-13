@@ -4,7 +4,7 @@ import React from 'react';
 const Header = () => {
     return (
         <>
-            <div className="container-md my-3 bg-body shadow-lg bg-body rounded">
+            <div className="container-fluid my-3 bg-body shadow-lg bg-body rounded">
                 <nav className="navbar bg-none">
                     <ul className="container-md me-auto m-2">
                         <li className='nav-item fs-2 fw-bold text-success'>

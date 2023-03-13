@@ -7,10 +7,15 @@ function App() {
 
 
   return (
-    <div className="container-fluid app-bg m-0 p-0">
-      <Header />
-      <TotalCaseComponent />
-      <CountryInfo />
+    <div className="container-fluid m-0 p-0">
+      <div className="container-fluid app-bg m-0 p-0">
+        <Header />
+        <TotalCaseComponent />
+        <CountryInfo />
+      </div>
+      <div className="container-lg">
+        <h1>For Clickable Map</h1>
+      </div>
     </div>
   )
 }
