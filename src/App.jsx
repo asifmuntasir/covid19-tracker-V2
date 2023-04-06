@@ -2,6 +2,7 @@ import React from "react";
 import CountryInfo from "./components/CountryInfo";
 import Header from "./components/Header";
 import TotalCaseComponent from "./components/TotalCaseComponent";
+import LeafletMap from "./components/LeafletMap";
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         <CountryInfo />
       </div>
       <div className="container-lg">
-        <h1>For Clickable Map</h1>
+        <LeafletMap />
       </div>
     </div>
   )
