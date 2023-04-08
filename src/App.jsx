@@ -12,9 +12,9 @@ function App() {
       <div className="container-fluid app-bg m-0 p-0">
         <Header />
         <TotalCaseComponent />
-        <CountryInfo />
+        {/* <CountryInfo /> */}
       </div>
-      <div className="container-lg">
+      <div className="container-fluid">
         <LeafletMap />
       </div>
     </div>

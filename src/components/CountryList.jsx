@@ -17,7 +17,7 @@ const CountryList = ({ handleClick }) => {
 
     return (
         <div>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
                 <option selected>Select any country</option>
                 {
                     countries.map(cn =>

@@ -21,3 +21,9 @@ body {
 .text-warning--dark {
   color: #ffa801;
 }
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}

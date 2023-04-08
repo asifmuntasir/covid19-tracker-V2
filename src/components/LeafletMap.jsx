@@ -10,14 +10,15 @@ const center = {
     lng: -122.8756
 }
 
-
+// style={{ height: '100%' }}
 
 const LeafletMap = () => {
     return (
-        <div className='container-fluid h-100 w-100'>
+        <div className='map'>
 
             <MapContainer
-                style={{ height: '100%' }} center={center} zoom={6} scrollWheelZoom={false}>
+                style={{ height: '100%' }}
+                center={center} zoom={6} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
