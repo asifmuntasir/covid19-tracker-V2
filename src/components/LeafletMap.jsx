@@ -21,7 +21,7 @@ const LeafletMap = () => {
     useEffect(() => {
         async function getData() {
             const response = await axios.get('https://disease.sh/v3/covid-19/countries');
-            // console.log(response.data);
+            console.log(response.data);
             setCountries(response.data);
         }
 
@@ -29,21 +29,27 @@ const LeafletMap = () => {
     }, []);
 
 
-    const markers = countries.map(cn => {
-        if (cn) {
-            return <InfoMarker
-                key={cn.country}
-                lat={cn.countryInfo.lat}
-                long={cn.countryInfo.long}
-                title={cn.country}
-            />
-        }
-        return null;
-    });
+    // const markers = countries.map(cn => {
+    //     if (cn) {
+    //         return <InfoMarker
+    //             key={cn.country}
+    //             lat={cn.countryInfo.lat}
+    //             long={cn.countryInfo.long}
+    //             title={cn.country}
+    //         />
+    //     }
+    //     return null;
+    // });
 
 
     return (
         <div className='map'>
+            {/* 
+            <h1>{
+                countries.map(cn => {
+                    return <span>{cn.country}</span>
+                })
+            }</h1> */}
 
             <MapContainer
                 style={{ height: '100%' }}
@@ -53,7 +59,7 @@ const LeafletMap = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                {markers}
+                {/* {markers} */}
 
             </MapContainer>
 
